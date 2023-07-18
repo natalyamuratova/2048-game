@@ -1,27 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <h1>2048</h1>
+  <hr>
+  <Board/>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Board from '@/components/Board.vue';
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Board,
   },
-});
+};
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+hr {
+  width: 500px;
+
+  @media (max-width: 400px) {
+    width: auto;
+  }
 }
 </style>
