@@ -18,6 +18,9 @@ import {
 import Cell from './Cell.vue';
 import useSwipe, { TouchType } from '../composables/useSwipe';
 
+/**
+ * Board component. 654654654
+ */
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Board',
